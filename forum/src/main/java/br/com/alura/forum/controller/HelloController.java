@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 public class HelloController {
 
-    @RequestMapping("/") /*Quando será chamado*/
+    @RequestMapping("/Hello") /*Quando será chamado*/
     @ResponseBody
     public String hello(){
         return "Hello World!";
