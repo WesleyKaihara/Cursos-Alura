@@ -16,10 +16,6 @@ public class Curso {
 
 	public Curso(){}
 
-	public Curso(String nome, String categoria) {
-		this.nome = nome;
-		this.categoria = categoria;
-	}
 	
 	@Override
 	// Anotação auxilia na apresentação de erros , em caso de substituição de metodo que não existe , sem ela ele não aparece

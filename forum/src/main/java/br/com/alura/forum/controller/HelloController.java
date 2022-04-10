@@ -8,8 +8,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 public class HelloController {
 
-    @RequestMapping("/Hello") /*Quando será chamado*/
+    @RequestMapping("/Hello") /*Quando será chamado ->  rota */
     @ResponseBody
+    //Anotação que diz ao spring que o retorno não será uma página/rota e sim um conteudo
     public String hello(){
         return "Hello World!";
     }
