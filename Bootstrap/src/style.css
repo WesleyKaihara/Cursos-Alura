@@ -1,0 +1,38 @@
+.card_largura{
+  max-width: 18rem;
+}
+
+.imagem-carrossel-um{
+  object-fit: cover;
+  object-position:0 70%;
+  height: 400px;
+}
+
+.imagem-carrossel-dois{
+  object-fit: cover;
+  height: 400px;
+}
+
+.fonte-titulo{
+  font-family: 'Pacifico', cursive;
+}
+
+.cor-especial{
+  color: darkred !important;
+}
+
+.btn-cor-especial {
+  background: darkred;
+  border:none;
+  color: #fff;
+}
+
+.borda-cor-especial{
+  border-color: darkred;
+}
+
+.card-poisicao-img{
+  object-fit: cover;
+  object-position:0 70%;
+  height: 200px;
+}
