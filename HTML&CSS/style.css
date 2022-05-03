@@ -1,0 +1,291 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  background: #bbb;
+  padding: 20px 0;
+}
+
+nav {
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+nav li{
+  display: inline;
+  margin: 0 0 0 15px;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all .5s ease;
+  font-family: 'Montserrat', sans-serif;
+}
+nav a:hover{
+  color: #C78C19;
+  text-decoration: underline;
+}
+
+.container{
+  position: relative;
+  width: 940px;
+  margin: auto;
+}
+
+.produtos{
+  width: 940px;
+  margin: 50px auto;
+}
+
+.produtos li{
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border:2px solid #000;
+  border-radius: 10px;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+.produtos li:hover{
+  border-color: #C78C19;
+}
+
+.produtos li:hover h2{
+  font-size: 35px;
+}
+
+.produtos li:active{
+  border-color: #088c19;
+}
+
+.produtos h2{
+  font-size: 30px;
+  font-weight: bold;
+  transition: all .5s ease;
+}
+
+.produto-desc{
+  font-size: 18px;
+}
+
+.produto-preco{
+ font-size: 22px;
+ font-weight: bold; 
+ margin: 10px 0 0;
+}
+
+footer{
+  text-align: center;
+  background:url("/bg.jpg");
+  padding: 40px 0;
+}
+
+.copyright {
+  color: #fff;
+  font-size: 13px;
+  margin: 20px 0 0;
+  padding-bottom: 20px;
+}
+
+form{
+  margin: 40px 0 ;
+}
+
+form label,form legend{
+  display: block;
+  font-size:1em;
+  margin: 0 0 10px;
+}
+
+.input-default{
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 50%;
+}
+
+.enviar{
+  width: 40%;
+  padding: 15px 0;
+  background: orange;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+
+.enviar:hover{
+  background: darkorange;
+  transform: scale(1.02);
+}
+
+table {
+  margin: 20px 0 40px;
+}
+
+thead{
+  background: #555;
+  font-weight: bold;
+  color: #fff;
+}
+
+tbody td ,thead th{
+  border: 1px solid #000000;
+  padding: 8px 15px;
+}
+
+
+/*Home*/
+
+.banner{
+  width: 100%;
+}
+
+.principal{
+  padding: 3em 0;
+  background: #fefefe;
+  width: 940px;
+  margin: 50px auto;
+}
+.titulo-principal{
+  text-align: center;
+  font-size: 2em;
+  margin: 0 0 1em;
+  clear: left;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.principal p {
+  margin: 0 0 1em;
+}
+
+.principal b{
+  font-weight: bold;
+}
+
+.principal em{
+  font-style: italic;
+}
+
+.img-beneficios{
+  width: 60%;
+  box-shadow: 10px 10px 10px 0 #000;
+}
+
+/*Float faz com que os elementos fiquem no mesmo nivel , porem desviando do item*/
+.utensilios{
+  width: 120px;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.mapa{
+  padding: 3em 0;
+  background-image: linear-gradient(#fefefe,#888888);
+}
+
+.mapa p{
+  margin: 0 0 2em;
+  text-align: center;
+}
+
+.video{
+  width: 560px;
+  margin: 2em auto;
+}
+
+
+/*Beneficios*/
+
+.beneficios{
+  padding: 3em 0;
+  background: #888888;
+}
+
+.conteudo-beneficios{
+  width: 640px;
+  margin: 0 auto;
+}
+
+.lista-beneficios{
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.item{
+  line-height: 1.5em;
+}
+
+.item::before{
+  content: "🟊 ";
+}
+.item:nth-child(1) {
+  font-weight: bold;
+}
+
+.mapa-conteudo{
+  width: 940px;
+  margin: 0 auto;
+}
+
+
+/*  Main > p   (selecionar somente filho) */
+/*  Img ~ p    (selecionar somente p que estao depois de img)*/
+/*  p:not(.info)    (selecionar p que não possuem .info)*/
+
+@media screen and (max-width:480px){
+
+  .container,.principal,.conteudo-beneficios,.mapa-conteudo,.video,.produtos{
+    width: auto;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  nav {
+    position: static;
+    text-align: center;
+  }
+
+  .lista-beneficios,.img-beneficios{
+    width: 100%;
+  }
+  
+  .produtos li{
+  width: 90%;
+  margin: 20px auto;
+  }
+
+  .produtos{
+    text-align: center;
+  }
+
+  form {
+    width: 90%;
+    margin:30px auto;
+  }
+
+  .input-default{
+    width: 80%;
+  }
+
+  .horarios{
+    width: 80%;
+    margin: 20px auto;
+  }
+}
