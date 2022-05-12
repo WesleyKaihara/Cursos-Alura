@@ -52,6 +52,9 @@ $contas_correntes['12367831'] = [
   'saldo' => '1200'
 ];  
 
+//apagar item de array/vetor
+//remover variavel
+unset ($contas_correntes[12312312]);
 
 $contas_correntes['12345678'] = sacar($contas_correntes['12345678'],500);
 
@@ -60,7 +63,9 @@ $contas_correntes['12345678'] = depositar($contas_correntes['12345678'],1200);
 mudarNomeConta($contas_correntes['12367831'],'Julia');
 
 foreach ($contas_correntes as $cpf => $conta) {
-  echo "$conta[titular] │ $conta[saldo] ";
+  ['titular' => $titular , 'saldo' => $saldo] = $conta;
+
+  echo "$titular │ $saldo" . PHP_EOL;
  }
 
 
